@@ -8,9 +8,6 @@ require('../db/conn'); // db connection
 const User = require('../model/userSchema');
 const Notebook = require('../model/noteSchema');
 
-router.get('/', (req, res) => {
-    res.send('<h1>Home Page</h1>');
-});
 
 router.post('/authuser', async (req, res) => {
     const { email, password } = req.body;
