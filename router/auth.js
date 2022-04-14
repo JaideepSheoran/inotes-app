@@ -46,6 +46,7 @@ router.post('/adduser', async (req, res) => {
             return res.status(422).json({ message: "Email/Username already present." });
         }
         const user = new User(req.body);
+        user.getAuthToken();
         const regStatus = await user.save();
         if (regStatus) {
             return res.status(201).json({ message: "Added Succesfully!" });
