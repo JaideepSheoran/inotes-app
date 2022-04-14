@@ -1,0 +1,147 @@
+.contact-container{
+    margin: auto;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.contact-form{
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+}
+
+.contact-input{
+    width: 80%;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    line-height: 35px;
+    border-bottom: 1px solid black;
+}
+
+.contact-btn{
+    line-height: 35px;
+    border: none;
+    flex: 1;
+    margin: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(83, 201, 240);
+}
+
+.delete{
+    background-color: rgb(255, 74, 74);
+    color: white;
+}
+
+.contact-btns-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.contact-form:hover{
+    box-shadow: 0 3px 3px 3px rgb(0 0 0 / 20%);
+}
+
+.contact-table{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+.notes-data{
+    margin-top: 20px;
+    width: 80%;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+}
+
+.notes-data:hover{
+    box-shadow: 0 3px 3px 3px rgb(0 0 0 / 20%);
+}
+
+.notes-data > thead {
+    background-color: #53C9F0;
+}
+
+.notes-data > thead > tr > th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.notes-data > tbody {
+    background-color: white;
+}
+
+.notes-data > tbody > tr > td {
+    border:  1px solid black;
+    padding: 5px;
+}
+
+
+.notes-data > tbody > tr:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+#menu{
+    border: 2px solid black;
+    width: max-content;
+    position: absolute;
+}
+
+.eventlist{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event{
+    background-color: red;
+    width: 100%;
+}
+
+.btn-pos{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    line-height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 0 10px 0 10px;
+    background-color: rgb(83, 201, 240);
+}
+
+@media screen and (max-width: 470px) {
+    .notes-data{
+        font-size: 8px;
+        width: 95%;
+    }
+    .contact-form{
+        width: 95vw;
+        font-size: 12px;
+    }
+    .contact-input{
+        width: 90%;
+    }
+    .contact-btns-container{
+        width: 95%;
+    }
+}
