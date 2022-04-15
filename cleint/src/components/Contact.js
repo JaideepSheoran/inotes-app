@@ -236,7 +236,7 @@ function Contact() {
                           <tr>
                             <td>{element.title}</td>
                             <td>{getTags(element.tags)}</td>
-                            <td style={{whiteSpace:'pre-line'}}>{element.note}</td>
+                            <td style={{whiteSpace:'pre'}}>{element.note}</td>
                           </tr>
                         );
                       })
@@ -246,7 +246,7 @@ function Contact() {
                           <tr key={e._id}>
                             <td>{e.title}</td>
                             <td>{getTags(e.tags)}</td>
-                            <td style={{whiteSpace : 'pre-line'}}>{e.note}</td>
+                            <td style={{whiteSpace : 'pre'}}>{e.note}</td>
                             <td>
                               <button className='contact-btn' 
                                 onClick={(event) => {
